@@ -1,14 +1,17 @@
 <template>
   <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-full.svg"
-    >
+    <div class="row">
+      <Aluno/>
+      <Aulas/>
+    </div>
   </q-page>
 </template>
 
 <script>
+import Aulas from '../components/Aulas'
+import Aluno from '../components/Aluno'
 export default {
-  name: 'PageIndex'
+  name: 'Index',
+  components: { Aulas, Aluno }
 }
 </script>
